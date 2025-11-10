@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Home Page</title> 
+            <style>
+
+            *{
+            font-family: Arial;
+            }
+
+            body{
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            }
+
+            /*NAV*/ 
+
+            .navigation-bar{
+            background-color: white;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0 0 10px;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            }
+
+            .brand-logo{
+            height: 55px;
+            cursor: pointer;
+            padding-left: 20px;
+        }
+
+            .nav-links{
+            display: flex;
+            align-items: center;
+            }
+
+            .nav-links li{
+            padding: 20px 30px;
+            cursor: pointer;
+            }
+
+            li:hover{
+            background-color: rgb(219, 219, 219);
+            }
+
+            /* HERO SECTION*/
+
+            .main-content{
+            background-color: rgb(236, 236, 236);
+            height: 2000px;
+            }
+
+            .hero-section{
+            display: flex;
+            flex-direction: column;
+            background-color: lightblue;
+            padding: 30px 70px;
+            margin-top: 77px;
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .hero-image{
+            height: 220px;
+            }
+
+            .cta-buttons{
+            display: flex;
+            gap: 20px;
+            }
+
+
+            h1, p{
+            margin: 0}
+
+            button{
+            font-size: 23px;
+            padding: 10px 20px;
+            border-radius: 40px;
+            }
+
+            .size{
+            font-size: 80px;
+            font-weight: bold;
+            }
+
+            .fontfo{
+            font-family: 'Times New Roman', Times, serif;}
+
+            .hero-text{
+                line-height: 60px;
+            }
+
+            .hero-text p{
+                padding: 0;
+                font-style: italic;
+                display: inline-block;
+            }
+
+            .main-section{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+
+            /* FOOTER*/
+
+            footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 40px;
+            background-color: darkblue;
+            color: white;
+            height: 120px;
+            align-items: center;
+            }
+            </style> 
+        </head> 
+        <body>
+            <ul class="navigation-bar">
+                <a href="#"><img src= "pictures/HeaLogo.png" class="brand-logo"></a>
+                <div class="nav-links"> 
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Study In<br>Malaysia</li>
+                    <li>Contact Us</li>
+                </div>
+            </ul> 
+            <div class="main-content">
+                <div class="hero-section">
+                    <div class="main-section">
+                        <div class="hero-text"> 
+                            <h1>WELCOME TO <br><span class="size">HIGH EXCELLENCE<br><span class="fontfo">ADVISORY</span></span></h1>  
+                        </div>
+
+                        <img class="hero-image" src="pictures/HeaLogo.png">
+
+                        <div class="cta-buttons"> 
+                            <button>Inquire</button> 
+                            <button>Services</button> 
+                        </div>
+                    </div>
+                    <p class="introduction">We help students achieve high excellence</p>
+                </div>
+            </div>
+            <footer>
+                <p>HIGH EXCELLENCE ADVISORY<br>
+                achieve high excellence</p> 
+
+                <p>Coprigyht</p>
+
+                <p>Contact Us<br>
+                +number<br>
+                Address<br>
+                email<br>
+                </p> 
+            </footer>
+        </body>
+    </html>
+
