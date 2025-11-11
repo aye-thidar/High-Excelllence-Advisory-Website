@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Services - High Excellence Advisory</title>
+    <style>
+       
+        *{
+            font-family: Arial;
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+        }
+
+        .navigation-bar{
+            background-color: white;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0 0 10px;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .brand-logo{
+            height: 55px;
+            cursor: pointer;
+            padding-left: 20px;
+        }
+
+        .nav-links{
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links li{
+            padding: 20px 30px;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        li:hover{
+            background-color: rgb(219, 219, 219);
+        }
+
+        .main-content{
+            flex: 1;
+            padding-top: 77px;
+        }
+
+
+        .services-hero{
+            text-align: center;
+            background-color: lightblue;
+            padding: 60px 20px 80px 20px;
+            margin: 0;
+            box-shadow: inset 0 -3px 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid #d3e6f2;
+        }
+
+        .services-hero h1 {
+            font-size: 60px;
+            margin: 0;
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+
+        .services-hero p {
+            font-size: 18px;
+            font-style: italic;
+            color: #333;
+            margin: 5px 0 0 0;
+        }
+
+        
+        .services-container {
+            padding: 50px 20px;
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            flex: 1 1 300px;
+            min-height: 250px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            color: darkblue;
+            margin-top: 0;
+            border-bottom: 2px solid lightblue;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 40px;
+            background-color: darkblue;
+            color: white;
+            height: 120px;
+            align-items: center;
+        }
+
+        footer p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navigation-bar">
+        <a href="index.html"><img src="pictures/HeaLogo.png" class="brand-logo" alt="High Excellence Advisory Logo"></a>
+        <div class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li style="background-color: rgb(219, 219, 219);"><a href="services.html">Services</a></li>
+            <li><a href="study.html">Study In<br>Malaysia</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </div>
+    </ul>
+
+    <div class="main-content">
+        <div class="services-hero">
+            <h1>Our Services</h1>
+            <p>Here is how we help our clients</p>
+        </div>
+
+        <div class="services-container">
+            
+            <div class="service-card">
+                <h3>Educational Consultation</h3>
+                <p>
+                    We guide students in identifying suitable programs and institutions based on academic history, personal interests, future goals, and financial capacity. Our advice is designed to ensure the right match for every student.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Application & Admission</h3>
+                <p>
+                    From document preparation to form submission and university coordination, we ensure accuracy and compliance at every stage of the application process.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Visa & Immigration Advisory</h3>
+                <p>
+                    We assist with financial documents, visa applications, appointment scheduling, and pre-interview support using up-to-date immigration guidelines.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Pre-Departure Briefing</h3>
+                <p>
+                    Our orientation covers essential topics such as Malaysian culture, safety, budgeting, and student life to help ease the transition for international students.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Accommodation & Airport Assistance</h3>
+                <p>
+                    We arrange airport pickups and assist students in finding safe and convenient housing options for a smooth and comfortable arrival in Malaysia.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>Continuous Student Support</h3>
+                <p>
+                    We provide ongoing support with important matters like renewals, part-time work guidance, academic issues, and general well-being throughout the student's stay.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>HIGH EXCELLENCE ADVISORY<br>
+        achieve high excellence</p> 
+
+        <p>Copyright © 2025</p>
+
+        <p>Contact Us<br>
+        +6017 282 7075<br>
+        Address: A-18-13, Sterling Condo, No.3, Jalan SS7/19, Petaling Jaya 47301 Selangor<br>
+        Email: highexcellence@outlook.com<br>
+        </p> 
+    </footer>
+</body>
+</html>
