@@ -2,69 +2,9 @@
     <html>
         <head>
             <title>Home Page</title> 
+            <link rel="stylesheet" href="global.css">
+
             <style>
-
-            /*GLOBAL*/
-
-            *{
-            font-family: Arial;
-            }
-
-            body{
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            }
-
-            .high-excellence{
-                font-weight: bold;
-                font-family: 'Times New Roman', Times, serif;
-            }
-
-            .advisory{
-                letter-spacing: 7px;
-                color:rgb(228, 176, 47);
-            }
-
-            /*NAV*/ 
-
-            .navigation-bar{
-            background-color: white;
-            list-style-type: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 0 0 10px;
-            margin: 0;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1;
-            }
-
-            .brand-logo{
-            height: 55px;
-            cursor: pointer;
-            padding-left: 20px;
-            }
-
-            .nav-links{
-            display: flex;
-            align-items: center;
-            }
-
-            .nav-links li{
-            padding: 20px 30px;
-            cursor: pointer;
-            }
-
-            li:hover{
-            background-color: rgb(236, 236, 236);
-            }
-
-            /*website global*/
-
             
             h1, p{
             margin: 0;}
@@ -77,11 +17,12 @@
 
             .hero-section{
             display: flex;
-            flex-direction: column;
             background-image: linear-gradient(to right, rgb(234, 239, 191),rgb(170, 170, 238));
             padding: 30px 70px;
             margin-top: 75px;
             box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            justify-content: space-between;
             }
 
             .hero-image{
@@ -104,6 +45,7 @@
             border-width: 0;
             }
 
+            /*hero specific style*/
             .hero-advisory{
                 font-weight: 500;
                 font-size: 50px;
@@ -118,12 +60,6 @@
                 font-size: 20px;
                 margin-top: 10px;
                 font-style: italic
-            }
-
-            .hero-main{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
             }
 
             .hero-title{
@@ -144,40 +80,6 @@
             .content-section{
             margin: 50px 80px;}
 
-            /* FOOTER*/
-
-            footer{
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 40px;
-            background-color: darkblue;
-            color: white;
-            height: 120px;
-            align-items: center;
-            }
-
-            .footer-logo{
-                height: 50px;
-                margin-right: 10px;
-            }
-
-            .footer-brand{
-                display: flex;
-                align-items: center;
-            }
-
-            .transparent{
-                opacity: 0.8;
-            }
-
-            .copyright{
-                margin-left: 50px;
-            }
-
-            .smallsize{ 
-                font-size: 12px;
-            }
-
 
             /*                            <p class="title-1"> Complete Journey Assistance </p>
                                 From program selection and admission processing to visa advice and
@@ -189,29 +91,28 @@
             </style> 
         </head> 
         <body>
-            <ul class="navigation-bar">
-                <a href="homepage.html"><img src= "pictures/HeaLogo.png" class="brand-logo"></a>
-                <div class="nav-links"> 
-                    <li>About Us</li>
-                    <li>Services</li>
-                    <li>Study In<br>Malaysia</li>
-                    <li>Contact Us</li>
-                </div>
-            </ul> 
+            <nav>
+                <ul class="navigation-bar">
+                    <a href="homepage.html"><img src= "pictures/HeaLogo.png" class="brand-logo"></a>
+                    <div class="nav-links"> 
+                        <li>About Us</li>
+                        <li>Services</li>
+                        <li>Study In<br>Malaysia</li>
+                        <li>Contact Us</li>
+                    </div>
+                </ul> 
+            </nav>
             <div class="main-content">
                 <div class="hero-section">
-                    <div class="hero-main">
-                            <div class="hero-title">
-                                <span class="hero-highexcellence high-excellence">HIGH<br>EXCELLENCE</span>
-                                <span class="hero-advisory advisory">ADVISORY</span> 
-                                <span class="hero-description">We are here to help international students to connect with top<br>universities in Malaysia.</span>
-                            </div>
-                            <img class="hero-image" src="pictures/HeaLogo.png">
-                        <div class="cta"> 
-                            <button>Inquire</button> 
-                            <button>Services</button> 
-                        </div>
-                        
+                    <div class="hero-title">
+                            <span class="hero-highexcellence high-excellence">HIGH<br>EXCELLENCE</span>
+                            <span class="hero-advisory advisory">ADVISORY</span> 
+                            <span class="hero-description">We are here to help international students to connect with top<br>universities in Malaysia.</span>
+                    </div>
+                    <img class="hero-image" src="pictures/HeaLogo.png">
+                    <div class="cta"> 
+                        <button>Inquire</button> 
+                        <button>Services</button> 
                     </div>
                 </div>
                 <div class= "content-section">
