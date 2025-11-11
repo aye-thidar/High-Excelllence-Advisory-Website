@@ -4,6 +4,8 @@
             <title>Home Page</title> 
             <style>
 
+            /*GLOBAL*/
+
             *{
             font-family: Arial;
             }
@@ -13,6 +15,16 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            }
+
+            .high-excellence{
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+            .advisory{
+                letter-spacing: 7px;
+                color:rgb(228, 176, 47);
             }
 
             /*NAV*/ 
@@ -28,13 +40,14 @@
             position: fixed;
             top: 0;
             width: 100%;
+            z-index: 1;
             }
 
             .brand-logo{
             height: 55px;
             cursor: pointer;
             padding-left: 20px;
-        }
+            }
 
             .nav-links{
             display: flex;
@@ -47,68 +60,89 @@
             }
 
             li:hover{
-            background-color: rgb(219, 219, 219);
+            background-color: rgb(236, 236, 236);
             }
+
+            /*website global*/
+
+            
+            h1, p{
+            margin: 0;}
 
             /* HERO SECTION*/
 
             .main-content{
-            background-color: rgb(236, 236, 236);
-            height: 2000px;
+            background-color: rgb(244, 244, 244);
             }
 
             .hero-section{
             display: flex;
             flex-direction: column;
-            background-color: lightblue;
+            background-image: linear-gradient(to right, rgb(234, 239, 191),rgb(170, 170, 238));
             padding: 30px 70px;
-            margin-top: 77px;
+            margin-top: 75px;
             box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
             }
 
             .hero-image{
-            height: 220px;
+            height: 270px;
+            margin-right: 15px;
             }
 
-            .cta-buttons{
+            /*HERO BUTTONS*/
+            
+            .cta{  
             display: flex;
             gap: 20px;
             }
 
-
-            h1, p{
-            margin: 0}
-
             button{
-            font-size: 23px;
-            padding: 10px 20px;
+            font-size: 25px;
+            padding: 10px 30px;
             border-radius: 40px;
+            position: relative;
+            border-width: 0;
             }
 
-            .size{
-            font-size: 80px;
-            font-weight: bold;
+            .hero-advisory{
+                font-weight: 500;
+                font-size: 50px;
+            }
+            
+            .hero-highexcellence{
+                font-size: 100px;
+                color: rgb(9, 9, 52);
             }
 
-            .fontfo{
-            font-family: 'Times New Roman', Times, serif;}
-
-            .hero-text{
-                line-height: 60px;
+            .hero-description{
+                font-size: 20px;
+                margin-top: 10px;
+                font-style: italic
             }
 
-            .hero-text p{
-                padding: 0;
-                font-style: italic;
-                display: inline-block;
-            }
-
-            .main-section{
+            .hero-main{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
             }
 
+            .hero-title{
+                display: flex;
+                flex-direction: column;
+            }
+
+            /*other content*/
+
+            .feature-box{
+            font-size: 20px;}
+
+            .section-title{
+            font-size: 40px;
+            text-decoration: underline;
+            }
+
+            .content-section{
+            margin: 50px 80px;}
 
             /* FOOTER*/
 
@@ -121,11 +155,42 @@
             height: 120px;
             align-items: center;
             }
+
+            .footer-logo{
+                height: 50px;
+                margin-right: 10px;
+            }
+
+            .footer-brand{
+                display: flex;
+                align-items: center;
+            }
+
+            .transparent{
+                opacity: 0.8;
+            }
+
+            .copyright{
+                margin-left: 50px;
+            }
+
+            .smallsize{ 
+                font-size: 12px;
+            }
+
+
+            /*                            <p class="title-1"> Complete Journey Assistance </p>
+                                From program selection and admission processing to visa advice and
+                                 pre-departure assistance, we offer comprehensive end-to-end student placement services.</li>
+                            
+                            <li>Global Connection Experts 
+                                We have expertise in connecting students from ASEAN and African countries,
+                                such as Nigeria and India, with prestigious, internationally recognised colleges and universities in Malaysia.</li>*/
             </style> 
         </head> 
         <body>
             <ul class="navigation-bar">
-                <a href="#"><img src= "pictures/HeaLogo.png" class="brand-logo"></a>
+                <a href="homepage.html"><img src= "pictures/HeaLogo.png" class="brand-logo"></a>
                 <div class="nav-links"> 
                     <li>About Us</li>
                     <li>Services</li>
@@ -135,32 +200,42 @@
             </ul> 
             <div class="main-content">
                 <div class="hero-section">
-                    <div class="main-section">
-                        <div class="hero-text"> 
-                            <h1>WELCOME TO <br><span class="size">HIGH EXCELLENCE<br><span class="fontfo">ADVISORY</span></span></h1>  
-                        </div>
-
-                        <img class="hero-image" src="pictures/HeaLogo.png">
-
-                        <div class="cta-buttons"> 
+                    <div class="hero-main">
+                            <div class="hero-title">
+                                <span class="hero-highexcellence high-excellence">HIGH<br>EXCELLENCE</span>
+                                <span class="hero-advisory advisory">ADVISORY</span> 
+                                <span class="hero-description">We are here to help international students to connect with top<br>universities in Malaysia.</span>
+                            </div>
+                            <img class="hero-image" src="pictures/HeaLogo.png">
+                        <div class="cta"> 
                             <button>Inquire</button> 
                             <button>Services</button> 
                         </div>
+                        
                     </div>
-                    <p class="introduction">We help students achieve high excellence</p>
+                </div>
+                <div class= "content-section">
+                    <p class="section-title">WHY TRUST US</p>
+                    <div class="feature-box">
+                            <p class="feature-title"> Local and Licensed Trust </p>
+                            Based in Petaling Jaya, Selangor, Malaysia, we are a student recruitment company.
+                            We provide truthful and ethical advisory services.
+                    </div>
                 </div>
             </div>
             <footer>
-                <p>HIGH EXCELLENCE ADVISORY<br>
-                achieve high excellence</p> 
+                <div class="footer-brand">
+                     <img class="footer-logo" src="pictures/footerlogo.png">
+                    <p><span class="high-excellence">HIGH EXCELLENCE</span><br><span class = "advisory smallsize">ADVISORY</span></p> 
+                </div>
 
-                <p>Coprigyht</p>
+                <p class="copyright transparent">© 2025 High Excellence Advisory. All rights reserved. | Together we achieve High Excellence.</p>
 
-                <p>Contact Us<br>
-                +number<br>
-                Address<br>
-                email<br>
-                </p> 
+                <p class="contact transparent">Contact Us<br>
+                A-18-13, Sterling Condo, No.3, Jalan SS7/19,<br> Petaling Jaya 47301 Selangor<br>
+                +6017 282 7075<br> 
+                highexcellence@outlook.com <br>
+                </p>
             </footer>
         </body>
     </html>
