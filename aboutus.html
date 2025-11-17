@@ -2,56 +2,14 @@
 <html>
 <head>
   <title>About Us - High Excellence Advisory</title>
+  <link rel="stylesheet" href="global.css">
   <style>
     * {
       font-family: Arial;
       box-sizing: border-box;
     }
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-    }
-    
 
-    .navigation-bar {
-      background-color: white;
-      list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 0 0 10px;
-      margin: 0;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-    }
-
-    .brand-logo {
-      height: 55px;
-      cursor: pointer;
-      padding-left: 20px;
-    }
-
-    .nav-links {
-      color:#333;
-      display: flex;
-      align-items: center;
-    }
-
-    .nav-links li {
-      padding: 20px 30px;
-      cursor: pointer;
-      list-style: none;
-    }
-
-    li:hover {
-      background-color: rgb(219, 219, 219);
-    }
 
     .main-content {
       flex: 1;
@@ -134,16 +92,17 @@
 
 <body>
   
-  <ul class="navigation-bar">
-    <a href="index.html"><img src="pictures/HeaLogo.png" class="brand-logo"></a>
-    <div class="nav-links">
-      <li>Home</li>
-      <li style="background-color: rgb(219, 219, 219);">About Us</li>
-      <li>Services</li>
-      <li>Study In<br>Malaysia</li>
-      <li>Contact Us</li>
+<nav>
+<ul class="navigation-bar">
+    <a href="homepage.html"><img src= "pictures/HeaLogo.png" class="brand-logo"></a>
+    <div class="nav-links"> 
+        <a href="aboutus.html"><li>About Us</li></a>
+        <a href="services.html"><li>Services</li></a>
+        <a href="studyinmalaysia.html"><li>Study In<br>Malaysia</li></a>
+        <a href="contactus.html"><li>Contact Us</li></a>
     </div>
-  </ul>
+</ul> 
+</nav>
 
   <div class="main-content">
     <div class="about-hero">
@@ -186,24 +145,19 @@
     </div>
   </div>
 
-  <footer>
-    <p>HIGH EXCELLENCE ADVISORY<br>
-      achieve high excellence</p>
+<footer>
+                <div class="footer-brand">
+                     <img class="footer-logo" src="pictures/footerlogo.png">
+                    <p><span class="high-excellence">HIGH EXCELLENCE</span><br><span class = "advisory smallsize">ADVISORY</span></p> 
+                </div>
 
-    <p>Copyright © 2025</p>
+                <p class="copyright transparent">© 2025 High Excellence Advisory. All rights reserved. | Together we achieve High Excellence.</p>
 
-    <div>
-        <p>Contact Us<br>
-        +6017 282 7075<br>
-        Address: A-18-13, Sterling Condo, No.3, Jalan SS7/19, Petaling Jaya 47301 Selangor<br>
-        Email: highexcellence@outlook.com<br>
-        </p>
-      <div class="social-icons">
-        <div class="icon-box"></div>
-        <div class="icon-box"></div>
-        <div class="icon-box"></div>
-      </div>
-    </div>
-  </footer>
+                <p class="contact transparent">Contact Us<br>
+                A-18-13, Sterling Condo, No.3, Jalan SS7/19,<br> Petaling Jaya 47301 Selangor<br>
+                +6017 282 7075<br> 
+                highexcellence@outlook.com <br>
+                </p>
+            </footer>
 </body>
 </html>
