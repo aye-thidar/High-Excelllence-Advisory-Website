@@ -48,10 +48,37 @@
       box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
     }
 
+    /* layout each section with image beside text */
+    .about-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .about-item:nth-child(odd) {
+      flex-direction: row;
+    }
+
+    .about-item:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .about-item img {
+      flex-shrink: 0;
+      width: 200px;
+      height: 180px;
+      border-radius: 8px;
+    }
+
+    .about-item-content {
+      flex: 1;
+    }
+
     .about-section h2 {
       font-size: 28px;
       color: darkblue;
-      margin-bottom: 15px;
+      margin: 0 0 15px 0;
     }
 
     .about-section p {
@@ -111,40 +138,52 @@
     </div>
 
     <div class="about-section">
-      <h2>Our Story</h2>
-      <img src="/pictures/aboutus.png" alt="license picture" style="width:200px;height:180px;">
-      <p>
-        High Excellence Advisory is a dynamic and licensed student recruitement agency based in the heart of Petaling Jaya, Selangor, Malaysia.
-        We specialized in connecting aspiring international students from ASEAN regions with top-tier private colleges and universities in Malaysia.
-        <br>
-        <br>
-        With a deep understanding of Malaysian eduction landscape and internation student needs, our mission is to provide trasparent, 
-        ethical and high-quality advisory services to empower students with the right educational opportunities.
-      </p>
+      <div class="about-item">
+        <img src="/pictures/aboutus.png" alt="license picture">
+        <div class="about-item-content">
+          <h2>Our Story</h2>
+          <p>
+            High Excellence Advisory is a dynamic and licensed student recruitement agency based in the heart of Petaling Jaya, Selangor, Malaysia.
+            We specialized in connecting aspiring international students from ASEAN regions with top-tier private colleges and universities in Malaysia.
+            <br>
+            <br>
+            With a deep understanding of Malaysian eduction landscape and internation student needs, our mission is to provide trasparent, 
+            ethical and high-quality advisory services to empower students with the right educational opportunities.
+          </p>
+        </div>
+      </div>
 
-      <h2>Our Vision</h2>
-      <img src="/pictures/vision.png" alt="vision" style="width:200px;height:180px;">
-      <p>
-        To be a trusted educational bridge between Malaysia and emerging
-        student markets across ASEAN and Africa, fostering global learning,
-        cultural exchange, and academic excellence.
-      </p>
+      <div class="about-item">
+        <img src="/pictures/vision.png" alt="vision">
+        <div class="about-item-content">
+          <h2>Our Vision</h2>
+          <p>
+            To be a trusted educational bridge between Malaysia and emerging
+            student markets across ASEAN and Africa, fostering global learning,
+            cultural exchange, and academic excellence.
+          </p>
+        </div>
+      </div>
 
-      <h2>Our Mission</h2>
-      <img src="/pictures/mission.png" alt="mission" style="width:200px;height:180px;">
-      <p>
-        • To assist international students in selecting the most suitable
-          Malaysian college or university based on academic goals, career
-          aspirations, and budget.
-          <br>
-          <br>
-        • To provide end-to-end student placement services including program
-          selection, admission processing, visa guidance, and pre-departure support.
-          <br>
-          <br>
-        • To support Malaysian higher education institutions in expanding
-          their reach and diversity by tapping into new and emerging student markets.
-      </p>
+      <div class="about-item">
+        <img src="/pictures/mission.png" alt="mission">
+        <div class="about-item-content">
+          <h2>Our Mission</h2>
+          <p>
+            • To assist international students in selecting the most suitable
+              Malaysian college or university based on academic goals, career
+              aspirations, and budget.
+              <br>
+              <br>
+            • To provide end-to-end student placement services including program
+              selection, admission processing, visa guidance, and pre-departure support.
+              <br>
+              <br>
+            • To support Malaysian higher education institutions in expanding
+              their reach and diversity by tapping into new and emerging student markets.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
               <footer>
