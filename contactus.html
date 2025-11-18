@@ -17,9 +17,7 @@
             .main-content{ 
                 flex: 1; 
                 background-color: rgb(244, 244, 244); 
-                padding-top: 90px; 
-                padding-left:20px; 
-                padding-right:20px;
+                padding-top: 70px;
             }
 
             /* hero section: matches aboutus style */
@@ -28,7 +26,12 @@
                 background-image: linear-gradient(to right, rgb(234, 239, 191), rgb(170, 170, 238));
                 padding: 60px 20px;
                 margin: 0;
-                box-shadow: inset 0 -3px 10px rgba(0, 0, 0, 0.1);
+                width: 100vw;
+                position: relative;
+                left: 50%;
+                right: 50%;
+                margin-left: -50vw;
+                margin-right: -50vw;
             }
 
             .contact-hero h1 {
@@ -57,9 +60,9 @@
 
             .contact-grid{ display: grid; grid-template-columns: 1fr 2fr; gap: 24px; align-items: start; }
 
-            .card{ background: #fff; padding: 24px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+            .card{ background: #fff; padding: 24px; border-radius: 12px; }
 
-            label{ display:block; font-weight:600; margin-top:12px; }
+            label{ display:block; font-weight:600; margin-top:12px; color: darkblue; }
             input, textarea{ width:100%; padding:10px; margin-top:8px; border:1px solid #ddd; border-radius:6px; }
             .gender-options{ display:flex; gap:12px; align-items:center; margin-top:8px; }
             .gender-options label{ display:inline-flex; align-items:center; gap:6px; margin:0; }
